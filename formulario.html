@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de idiomas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 40px;
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="text"], input[type="email"] {
+      width: 90%;
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .idioma {
+      grid-column: span 2;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+      margin-top: 10px;
+    }
+    .boton {
+      grid-column: span 2;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">Formulario de idiomas</h2>
+
+  <form action="http://ncoge.com/phps/formulario.php" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" value="Juan de Garay">
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+
+    <!-- Inglés -->
+    <div class="idioma">
+      <label>Inglés:</label><br>
+      <input type="radio" id="ing_basico" name="ingles" value="básico">
+      <label for="ing_basico">Básico</label>
+      <input type="radio" id="ing_medio" name="ingles" value="medio">
+      <label for="ing_medio">Medio</label>
+      <input type="radio" id="ing_avanzado" name="ingles" value="avanzado">
+      <label for="ing_avanzado">Avanzado</label>
+    </div>
+
+    <!-- Francés -->
+    <div class="idioma">
+      <label>Francés:</label><br>
+      <input type="radio" id="fr_basico" name="frances" value="básico">
+      <label for="fr_basico">Básico</label>
+      <input type="radio" id="fr_medio" name="frances" value="medio">
+      <label for="fr_medio">Medio</label>
+      <input type="radio" id="fr_avanzado" name="frances" value="avanzado">
+      <label for="fr_avanzado">Avanzado</label>
+    </div>
+
+    <!-- Alemán -->
+    <div class="idioma">
+      <label>Alemán:</label><br>
+      <input type="radio" id="al_basico" name="aleman" value="básico">
+      <label for="al_basico">Básico</label>
+      <input type="radio" id="al_medio" name="aleman" value="medio">
+      <label for="al_medio">Medio</label>
+      <input type="radio" id="al_avanzado" name="aleman" value="avanzado">
+      <label for="al_avanzado">Avanzado</label>
+    </div>
+
+    <div class="boton">
+      <input type="image" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Button_Icon_Blue.svg" alt="Enviar" width="100">
+    </div>
+  </form>
+
+</body>
+</html>
