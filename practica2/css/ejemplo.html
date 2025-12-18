@@ -1,0 +1,345 @@
+<!DOCTYPE html> 
+
+<html lang="es"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <title>Ejemplo Completo de HTML</title> 
+
+ 
+
+<!-- ENLACE A LA HOJA DE ESTILOS --> 
+
+    <link rel="stylesheet" href="css/estilo.css"> 
+
+ 
+
+</head> 
+
+<body> 
+
+  
+
+    <!-- =============================================== --> 
+
+    <!--                  ENCABEZADOS                    --> 
+
+    <!-- =============================================== --> 
+
+    <h1>Ejemplo Completo HTML</h1> 
+
+    <h2>Subtítulo de ejemplo</h2> 
+
+    <h3>Otro encabezado</h3> 
+
+  
+
+    <!-- =============================================== --> 
+
+    <!--                      PÁRRAFOS                    --> 
+
+    <!-- =============================================== --> 
+
+    <p>Este es un párrafo de ejemplo para practicar estilos como bordes, sombras, márgenes o padding.</p> 
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+
+  
+
+    <!-- =============================================== --> 
+
+    <!--                       ENLACES                    --> 
+
+    <!-- =============================================== --> 
+
+    <h2>Enlaces</h2> 
+
+  
+
+    <!-- Enlace relativo --> 
+
+    <a href="pagina2.html">Ir a página 2 (relativo)</a><br> 
+
+  
+
+    <!-- Enlace absoluto --> 
+
+    <a href="https://www.google.es" target="_blank">Ir a Google (absoluto)</a><br> 
+
+  
+
+    <!-- Enlace con imagen --> 
+
+    <a href="index.html"> 
+
+        <img src="casa.png" alt="Inicio" width="50"> 
+
+    </a> 
+
+  
+
+    <!-- =============================================== --> 
+
+    <!--                        LISTAS                    --> 
+
+    <!-- =============================================== --> 
+
+    <h2>Listas</h2> 
+
+  
+
+    <ul> 
+
+        <li>Elemento de lista 1</li> 
+
+        <li>Elemento de lista 2</li> 
+
+        <li>Elemento de lista 3</li> 
+
+    </ul> 
+
+  
+
+    <ol> 
+
+        <li>Primer elemento numerado</li> 
+
+        <li>Segundo elemento numerado</li> 
+
+        <li>Tercer elemento numerado</li> 
+
+    </ol> 
+
+  
+
+    <!-- =============================================== --> 
+
+    <!--                         TABLA                    --> 
+
+    <!-- =============================================== --> 
+
+    <h2>Tabla de ejemplo</h2> 
+
+  
+
+    <table border="1"> 
+
+        <tr> 
+
+            <th>Nombre</th> 
+
+            <th>Edad</th> 
+
+            <th>Población</th> 
+
+        </tr> 
+
+        <tr> 
+
+            <td>Raúl</td> 
+
+            <td>52</td> 
+
+            <td>Montserrat</td> 
+
+        </tr> 
+
+        <tr> 
+
+            <td>Pau</td> 
+
+            <td>17</td> 
+
+            <td>Valencia</td> 
+
+        </tr> 
+
+    </table> 
+
+  
+
+    <!-- =============================================== --> 
+
+    <!--                    FORMULARIO (UD 2.3)           --> 
+
+    <!-- =============================================== --> 
+
+    <h2>Formulario Completo</h2> 
+
+  
+
+    <form action="http://ncoge.com/phps/formulario.php" method="post"> 
+
+  
+
+        <!-- DATOS PERSONALES --> 
+
+        <fieldset> 
+
+            <legend>Datos personales</legend> 
+
+  
+
+            <label>Nombre:</label> 
+
+            <input type="text" name="nombre" value="Raúl" required><br><br> 
+
+  
+
+            <label>Apellidos:</label> 
+
+            <input type="text" name="apellidos"><br><br> 
+
+  
+
+            <label>Email:</label> 
+
+            <input type="email" name="email" placeholder="correo@ejemplo.com"><br><br> 
+
+  
+
+            <label>Fecha de nacimiento:</label> 
+
+            <input type="date" name="nacimiento"><br><br> 
+
+        </fieldset> 
+
+  
+
+        <!-- NIVELES DE IDIOMAS (RADIO) --> 
+
+        <fieldset> 
+
+            <legend>Nivel de idiomas</legend> 
+
+  
+
+            <p>Inglés:</p> 
+
+            <input type="radio" name="nivel_ing" value="A1">A1 
+
+            <input type="radio" name="nivel_ing" value="A2">A2 
+
+            <input type="radio" name="nivel_ing" value="B1">B1 
+
+            <input type="radio" name="nivel_ing" value="B2">B2 
+
+  
+
+            <p>Francés:</p> 
+
+            <input type="radio" name="nivel_fr" value="A1">A1 
+
+            <input type="radio" name="nivel_fr" value="A2">A2 
+
+            <input type="radio" name="nivel_fr" value="B1">B1 
+
+  
+
+        </fieldset> 
+
+  
+
+        <!-- CHECKBOX --> 
+
+        <fieldset> 
+
+            <legend>Preferencias</legend> 
+
+            <input type="checkbox" name="suscrito" value="si">Deseo suscribirme<br> 
+
+            <input type="checkbox" name="info" value="si">Deseo recibir información<br> 
+
+        </fieldset> 
+
+  
+
+        <!-- SELECT --> 
+
+        <fieldset> 
+
+            <legend>Selecciona un país</legend> 
+
+            <select name="pais"> 
+
+                <option value="es">España</option> 
+
+                <option value="it">Italia</option> 
+
+                <option value="fr">Francia</option> 
+
+            </select> 
+
+        </fieldset> 
+
+  
+
+        <!-- TEXTAREA --> 
+
+        <fieldset> 
+
+            <legend>Comentarios</legend> 
+
+            <textarea name="comentarios" rows="4" cols="40">Escribe algo aquí...</textarea> 
+
+        </fieldset> 
+
+  
+
+        <!-- BOTÓN IMAGEN --> 
+
+        <p>Enviar:</p> 
+
+        <input type="image" src="img/enviar.png" width="60" alt="Enviar formulario"> 
+
+  
+
+    </form> 
+
+  
+
+    <!-- =============================================== --> 
+
+    <!--               CONTENEDORES PARA CSS              --> 
+
+    <!-- =============================================== --> 
+
+    <h2>Bloques DIV para practicar CSS</h2> 
+
+  
+
+    <div class="bloque1"> 
+
+        <p>Este bloque sirve para practicar bordes redondeados, sombras o fondos repetidos.</p> 
+
+    </div> 
+
+  
+
+    <div class="bloque2"> 
+
+        <p>Este bloque se puede usar para practicar display, márgenes y paddings.</p> 
+
+    </div> 
+
+  
+
+    <!-- =============================================== --> 
+
+    <!--                     PIE DE PÁGINA                --> 
+
+    <!-- =============================================== --> 
+
+    <footer> 
+
+        <p>© 2025 Ejemplo HTML para prácticas</p> 
+
+    </footer> 
+
+  
+
+</body> 
+
+</html> 

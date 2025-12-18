@@ -1,0 +1,161 @@
+/* =========================== REGLAS GENERALES =========================== */ 
+
+{ box-sizing: border-box; } 
+
+body { font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 20px; 
+
+/* Fondo tipo práctica 5 páginas con tonterías */ 
+background-image: url("../img/fondo-marte.jpg"); /* pon tu imagen */ 
+background-repeat: no-repeat; 
+background-size: cover;     /* rellena toda la ventana */ 
+background-attachment: fixed; /* que no se mueva al hacer scroll */ 
+  
+
+} 
+
+/* =========================== ENCABEZADOS =========================== */ 
+
+h1 { text-align: center; 
+     background-color: #e6e6e6;
+     padding: 15px;
+     margin-bottom: 20px; 
+
+/* Línea superior de 5px negra (punto 1 de CSS2) */ 
+border-top: 5px solid #000; 
+  
+
+} 
+
+h2 { margin-top: 30px; margin-bottom: 10px; color: #222; } 
+
+h3 { margin-top: 10px; color: #555; } 
+
+/* =========================== PÁRRAFOS =========================== */ 
+
+.parrafo1, .parrafo2 { 
+    
+width: 90%; 
+/* Rellenan el 90% de la ventana (punto 10) / margin: 10px auto; / centrados */ 
+
+padding: 10px;
+ background-color: #f5f5ff; 
+
+/* Sombras (punto 5) */ 
+box-shadow: 3px 3px 6px rgba(0,0,0,0.4); 
+ 
+/* Sangría de primera línea (punto 9) */ 
+text-indent: 40px; 
+  
+
+} 
+
+/* Esquinas superiores redondeadas del primer párrafo (punto 4) */ .parrafo1 { border-top-left-radius: 30px; border-top-right-radius: 30px; 
+
+/* Fondo que se repite (punto 12) */ 
+background-image: url("../img/patron.png");  /* patrón pequeño */ 
+background-repeat: repeat; 
+  
+
+} 
+
+/* Esquinas inferiores redondeadas del segundo párrafo (punto 8) */ .parrafo2 { border-bottom-left-radius: 30px; border-bottom-right-radius: 30px; } 
+
+/* Separación entre párrafos dentro de su caja (punto 11) */ .parrafo1 p, .parrafo2 p { margin: 10px; } 
+
+/* =========================== ENLACES / MENÚ =========================== */ 
+
+.enlace-menu { display: inline-block; margin: 5px 0; padding: 5px 10px; text-decoration: none; color: #000; 
+
+/* Línea roja a la izquierda de cada opción (punto 7) */ 
+border-left: 5px solid red; 
+  
+
+} 
+
+/* Hover del menú (punto 14) */ .enlace-menu:hover { text-decoration: underline; text-decoration-color: red; } 
+
+/* Casa de inicio */ .icono-casa { width: 50px; vertical-align: middle; } 
+
+/* =========================== LISTAS =========================== */ 
+
+.lista-simple { list-style-type: square; padding-left: 40px; } 
+
+.lista-numerada { list-style-type: decimal; padding-left: 40px; } 
+
+/* =========================== TABLA =========================== */ 
+
+.tabla-ejemplo { width: 90%; margin: 10px auto 30px auto; border-collapse: collapse; background-color: #ffffffcc; } 
+
+.tabla-ejemplo th, .tabla-ejemplo td { border: 1px solid #333; padding: 8px 12px; text-align: left; } 
+
+.tabla-ejemplo th { background-color: #ddd; } 
+
+/* =========================== FORMULARIO =========================== */ 
+
+.formulario { width: 90%; margin: 20px auto; padding: 15px; background-color: #fdfdfd; border-radius: 15px; box-shadow: 0 0 10px rgba(0,0,0,0.3); } 
+
+.formulario fieldset { margin-bottom: 15px; border-radius: 10px; } 
+
+.formulario legend { font-weight: bold; } 
+
+.formulario label { display: inline-block; width: 150px; } 
+
+/* =========================== BLOQUES DIV PARA PRACTICAR =========================== */ 
+
+.bloque1, .bloque2 { width: 90%; margin: 15px auto; padding: 15px; background-color: #ffe5cc; box-shadow: 2px 2px 4px rgba(0,0,0,0.3); } 
+
+/* Bordes distintos en cada bloque para practicar */ .bloque1 { border-radius: 20px; border: 2px solid #ff9900; } 
+
+.bloque2 { border-radius: 5px; border: 2px dashed #cc6600; } 
+
+/* =========================== PIE DE PÁGINA =========================== */ 
+
+.pie { margin-top: 30px; padding: 10px; text-align: center; background-color: #e6e6e6; 
+
+/* Línea superior 5px negra (punto 6) */ 
+border-top: 5px solid #000; 
+  
+
+} 
+
+/* =========================== IMAGEN ALINEADA A LA DERECHA (punto 2,3) Aquí uso una regla genérica, puedes aplicarla con una clase si quieres a alguna imagen concreta. =========================== */ 
+
+img { max-width: 100%; } 
+
+/* Si quieres una imagen alineada a la derecha con margen derecho 60px, ponle la clase .img-derecha en el HTML / .img-derecha { float: right; margin-right: 60px; / punto 3 */ margin-left: 20px; border: 3px solid #000; } 
+
+/* =========================== MEDIA QUERY (punto 13) =========================== */ 
+
+@media all and (max-width: 500px) { 
+
+/* Imagen con borde rojo y 90% del ancho (puntos 2 y 3 de la media query) */ 
+.img-derecha, 
+.icono-casa { 
+    border: 3px solid red; 
+    width: 90%; 
+    float: none; 
+    display: block; 
+    margin: 10px auto; 
+} 
+ 
+body { 
+    padding: 10px; 
+} 
+ 
+.formulario, 
+.parrafo1, 
+.parrafo2, 
+.tabla-ejemplo, 
+.bloque1, 
+.bloque2 { 
+    width: 100%; 
+} 
+ 
+.formulario label { 
+    width: auto; 
+    display: block; 
+    margin-top: 5px; 
+} 
+  
+
+} 
