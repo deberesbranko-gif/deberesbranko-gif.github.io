@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: #fff;
+  width: 320px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Header */
+.cabecera {
+  display: flex;
+  align-items: center;
+  background: #ddd;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.foto {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden; /* 🔑 clave para el círculo */
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* recorta sin deformar */
+}
+
+
+.info h2 {
+  margin: 0;
+}
+
+.hobby {
+  margin: 5px 0 0;
+  color: #555;
+}
+
+/* Bio */
+.biografia {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+/* Stats */
+.numeros {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.num {
+  flex: 1;
+}
+
+.num strong {
+  display: block;
+  font-size: 18px;
+}
+
+.num span {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Actions */
+.acciones {
+  display: flex;
+  gap: 10px;
+}
+
+.seguir {
+  flex: 2;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.mensaje {
+  flex: 1;
+  background: #ecf0f1;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
