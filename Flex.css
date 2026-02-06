@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #0f0f0f;
+    color: #eee;
+}
+
+/* HEADER */
+header {
+    background-color: #7a0000;
+    text-align: center;
+    padding: 25px;
+}
+
+/* NAV */
+nav {
+    background-color: #1c1c1c;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #333;
+}
+
+/* MAIN */
+main {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.contenido {
+    width: 65%;
+    float: left;
+}
+
+.sidebar {
+    width: 30%;
+    float: right;
+    background-color: #1e1e1e;
+    padding: 15px;
+}
+
+/* IMÁGENES */
+img {
+    width: 100%;
+    margin: 10px 0;
+    border: 2px solid #444;
+}
+
+/* TARJETAS */
+.card {
+    background-color: #1b1b1b;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+    clear: both;
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
