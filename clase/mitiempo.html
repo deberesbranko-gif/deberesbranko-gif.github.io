@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas</title>
+
+</head>
+<body>
+    <h1>Hora</h1>
+<input type="button" id="boton" value="Tiempo?">
+<div id="resultado" >Que hora es?</div>
+<script>
+    let url ="https://timeapi.io/api/Time/current/zone?timeZone=Europe/Madrid";
+    let boton = document.getElementById("boton");
+    let resultado = document.getElementById("resultado");
+
+    function leerhora() {
+let hora="aaahhh"
+fetch(url)
+        .then(response =>{
+            console.log(response);
+            return response.json();
+        })
+
+        .then(data => {
+            console.log(data.time);
+           hora=data.time;
+           resultado.innerHTML=hora;
+        })
+        .catch(error => {
+            console.log("Error:" + error);
+        })
+    }
+
+    boton.addEventListener("click", (e) => {
+        leerhora();
+        console.log("Me han pulsado");
+        
+    });
+</script>
+
+</body>

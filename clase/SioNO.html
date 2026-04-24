@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Si o No</title>
+
+</head>
+<body>
+    <h1>Si o No </h1>
+
+    <input type="button" id="boton" value="Ejecutar">
+
+
+    <div id="resultado" > </div>
+
+    <img src="" id="imagen" width="100%">
+    <script>
+        let url ="https://yesno.wtf/api";
+        let boton=document.getElementById("boton"); 
+        let resultado=document.getElementById("resultado");
+        let imagen=document.getElementById("imagen");
+
+        boton.addEventListener("click", (event) => {
+            let imagenSRC=""
+            fetch(url)
+            .then(response => response.json())
+            .then(curasan =>{
+                imagenSRC=curasan.image;
+                resultado.innerHTML=curasan.answer;
+                
+                imagen.src=imagenSRC;
+            })
+        });
+            
+        
+
+    </script>
+
+    
+
+
+</body>
